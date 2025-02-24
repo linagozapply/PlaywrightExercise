@@ -1,6 +1,6 @@
 import { Locator, Page } from "@playwright/test";
 
-export class HubListingContainerSection {
+export class ProductsListingContainerSection {
   readonly page: Page;
   readonly root: Locator;
   readonly productsListingContainer: Locator;
