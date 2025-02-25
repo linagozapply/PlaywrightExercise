@@ -1,4 +1,5 @@
 import { Locator, Page } from "@playwright/test";
+import { CONFIRMATION_MODAL_TEXTS } from "../../constants/confirmationModalTexts";
 
 export class CheckOutConfirmationModal {
   readonly page: Page;
@@ -17,8 +18,12 @@ export class CheckOutConfirmationModal {
     this.checkOutModalHeader = this.checkOutModalContent.locator(".modal-header");
     this.checkOutModalTitle = this.checkOutModalHeader.locator(".modal-title");
     this.checkOutModalBody = this.checkOutModalHeader.locator(".modal-body");
-    this.registeredLoginLink = this.checkOutModalBody.nth(1);
-    this.continueOnCartButton = this.root.locator(".btn close-checkout-modal");
+    this.registeredLoginLink = this.checkOutModalBody.getByRole("link", {
+      name: CONFIRMATION_MODAL_TEXTS.REGISTERED_LOGIN,
+    });
+    this.continueOnCartButton = this.root.getByRole("button", {
+      name: CONFIRMATION_MODAL_TEXTS.CONTINUE_ON_CART,
+    });
   }
   async clickOnRegisteredLoginLink() {
     await this.registeredLoginLink.click();

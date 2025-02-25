@@ -1,7 +1,7 @@
 import { Locator, Page } from "@playwright/test";
 import { FieldActions } from "../../../utilities/fieldActions";
 import { CheckOutConfirmationModal } from "../../modals/checkOutConfirmationModal.modal";
-import { CartAddConfirmationModal } from "../../modals/cartAddConfirmationModal.modal";
+import { Modal } from "../../modals/modal.modal";
 export class ProductDetailsSection {
   readonly page: Page;
   readonly root: Locator;
@@ -27,8 +27,8 @@ export class ProductDetailsSection {
     );
   }
 
-  async clickAddItemToCart(): Promise<CartAddConfirmationModal> {
+  async clickAddItemToCart(): Promise<Modal> {
     await this.itemsAddToCartButton.click();
-    return new CartAddConfirmationModal(this.page);
+    return new Modal(this.page);
   }
 }

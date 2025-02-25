@@ -1,4 +1,5 @@
 import { Locator, Page } from "@playwright/test";
+import { CONFIRMATION_MODAL_TEXTS } from "../../constants/confirmationModalTexts";
 
 export class CartAddConfirmationModal {
   readonly page: Page;
@@ -17,8 +18,12 @@ export class CartAddConfirmationModal {
     this.cartModalHeader = this.cartModalContent.locator(".modal-header");
     this.cartModalTitle = this.cartModalHeader.locator(".modal-title");
     this.cartModalBody = this.cartModalHeader.locator(".modal-body");
-    this.cartView = this.cartModalBody.nth(1);
-    this.continueShoppingButton = this.root.locator(".btn btn-default cart");
+    this.cartView = this.cartModalBody.getByRole("link", {
+      name: CONFIRMATION_MODAL_TEXTS.VIEW_CART
+    });
+    this.continueShoppingButton = this.root.getByRole("button", {
+      name: CONFIRMATION_MODAL_TEXTS.CONTINUE_SHOPPING
+    });
   }
   async clickViewCartLink() {
     await this.cartView.click();
