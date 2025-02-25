@@ -1,7 +1,7 @@
 import { Locator, Page } from "@playwright/test";
 import { FieldActions } from "../../../utilities/fieldActions";
 import { CheckOutConfirmationModal } from "../../modals/checkOutConfirmationModal.modal";
-
+import { CartAddConfirmationModal } from "../../modals/cartAddConfirmationModal.modal";
 export class ProductDetailsSection {
   readonly page: Page;
   readonly root: Locator;
@@ -17,9 +17,7 @@ export class ProductDetailsSection {
     this.productInfo = this.root.locator(".product-information");
     this.productName = this.productInfo.locator("h2");
     this.itemsQuantityInput = this.productInfo.locator("#quantity");
-    this.itemsAddToCartButton = this.productInfo.locator(
-      ".btn btn-default cart"
-    );
+    this.itemsAddToCartButton = this.productInfo.locator(".cart");
   }
 
   async updateItemsQuantity(quantity: string) {
@@ -29,8 +27,8 @@ export class ProductDetailsSection {
     );
   }
 
-  async clickAddItemToCart(): Promise<CheckOutConfirmationModal> {
+  async clickAddItemToCart(): Promise<CartAddConfirmationModal> {
     await this.itemsAddToCartButton.click();
-    return new CheckOutConfirmationModal(this.page);
+    return new CartAddConfirmationModal(this.page);
   }
 }

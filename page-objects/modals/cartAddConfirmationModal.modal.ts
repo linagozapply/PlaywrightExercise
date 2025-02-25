@@ -1,6 +1,6 @@
 import { Locator, Page } from "@playwright/test";
 
-export class CartConfirmationModal {
+export class CartAddConfirmationModal {
   readonly page: Page;
   readonly root: Locator;
 
@@ -12,7 +12,7 @@ export class CartConfirmationModal {
   readonly continueShoppingButton: Locator;
   constructor(page: Page) {
     this.page = page;
-    this.root = this.page.locator(".cartModal");
+    this.root = this.page.locator("#cartModal");
     this.cartModalContent = this.root.locator(".modal-content");
     this.cartModalHeader = this.cartModalContent.locator(".modal-header");
     this.cartModalTitle = this.cartModalHeader.locator(".modal-title");
