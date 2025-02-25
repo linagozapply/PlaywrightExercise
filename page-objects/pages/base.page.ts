@@ -1,11 +1,21 @@
-import { Page } from '@playwright/test';
+import { Page } from "@playwright/test";
+import { NavBarSection } from "../sections/navbar/navbar.sestion";
+
 export class BasePage {
-    readonly page: Page;
-    
-    constructor(page: Page) {
-        this.page = page;
-    }
-    async goto(url: string) {
-        await this.page.goto(url);
-    }
+  readonly page: Page;
+  readonly navBarSection: NavBarSection;
+  constructor(page: Page) {
+    this.page = page;
+    this.navBarSection = new NavBarSection(page);
+  }
+
+  async waitForModal() {
+    await this.page.waitForSelector(".modal", {
+      state: "visible",
+      timeout: 2000,
+    });
+  }
+  async goto(url: string) {
+    await this.page.goto(url);
+  }
 }
