@@ -1,6 +1,6 @@
 import { Page } from "@playwright/test";
 import { BasePage } from "./base.page";
-import { ProductsListingContainerSection } from "../sections/products/productslistingContainer.section";
+import { ProductsListingContainerSection } from "../sections/products/productsListingContainer.section";
 
 export class ProductsPage extends BasePage {
     readonly productsListingContainerSection :ProductsListingContainerSection;
