@@ -1,4 +1,4 @@
-import { Locator ,Page } from "@playwright/test";
+import { Locator, Page } from "@playwright/test";
 import { BasePage } from "./base.page";
 
 export class LoginPage extends BasePage {
@@ -6,15 +6,21 @@ export class LoginPage extends BasePage {
   readonly signUpForm: Locator;
   readonly emailAddressLoginForm: Locator;
   readonly passwordLoginForm: Locator;
+  readonly loginButton: Locator;
   readonly emailAddressSignUpForm: Locator;
-  readonly passwordSignUpForm: Locator;
+  readonly nameSignUpForm: Locator;
+  readonly signUpButton: Locator;
   constructor(page: Page) {
     super(page);
+    //Login Form
     this.loginForm = this.page.locator(".login-form");
-      this.signUpForm = this.page.locator(".signup-form");
-      this.emailAddressLoginForm = this.loginForm.locator("#email");
-      this.passwordLoginForm = this.loginForm.locator("#password");
-      this.emailAddressSignUpForm = this.signUpForm.locator("#email");
-      this.passwordSignUpForm = this.signUpForm.locator("#password");
+    this.emailAddressLoginForm = this.loginForm.getByTestId("login-email");
+    this.passwordLoginForm = this.loginForm.getByTestId("login-password");
+    this.loginButton = this.loginForm.getByTestId("login-button");
+    // Sign Up Form
+    this.signUpForm = this.page.locator(".signup-form");
+    this.nameSignUpForm = this.signUpForm.getByTestId("signup-name");
+    this.emailAddressSignUpForm = this.signUpForm.getByTestId("signup-email");
+    this.signUpButton = this.signUpForm.getByTestId("signup-button");
   }
 }

@@ -1,6 +1,7 @@
 import { Page, Locator } from "@playwright/test";
 import { BasePage } from "./base.page";
 import { ProductDetailsSection } from "../sections/productDetails/productDetails.section";
+import { SLUGS } from "../../constants/slugs";
 
 export class ProductDetailsPage extends BasePage {
   readonly productDetailsSection: ProductDetailsSection;
@@ -10,9 +11,8 @@ export class ProductDetailsPage extends BasePage {
     this.productDetailsSection = new ProductDetailsSection(page);
   }
 
-  async goToProductURL(productHref: string) {
-    await this.goto(productHref);
-    // Wait a visible element from UI instead of a waitResponse.
+  async goToProductURL(productID: string) {
+    await this.goto(SLUGS.PRODUCT(productID));
     await this.productDetailsSection.productName.waitFor();
   }
 }
