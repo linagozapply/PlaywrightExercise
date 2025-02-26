@@ -4,16 +4,18 @@ import { ProductsListingContainerSection } from "../sections/products/productsLi
 import { SLUGS } from "../../constants/slugs";
 
 export class ProductsPage extends BasePage {
-    readonly productsListingContainerSection :ProductsListingContainerSection;
-    constructor(page: Page) {
-        super(page);
-        this.productsListingContainerSection = new ProductsListingContainerSection(page);
-    }
+  readonly productsListingContainerSection: ProductsListingContainerSection;
+  constructor(page: Page) {
+    super(page);
+    this.productsListingContainerSection = new ProductsListingContainerSection(
+      page
+    );
+  }
 
-    async gotoProductsPage() {
-        await Promise.all([
-          this.page.goto(SLUGS.PRODUCTS),
-          this.page.waitForLoadState("domcontentloaded"),
-        ]); 
-    }
+  async gotoProductsPage() {
+    await Promise.all([
+      this.page.goto(SLUGS.PRODUCTS),
+      this.page.waitForLoadState("domcontentloaded"),
+    ]);
+  }
 }

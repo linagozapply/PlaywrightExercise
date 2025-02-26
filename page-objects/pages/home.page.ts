@@ -5,8 +5,6 @@ export class HomePage extends BasePage {
     super(page);
   }
 
-
-
   async gotoHomePage() {
     await Promise.all([
       this.page.goto("/"),

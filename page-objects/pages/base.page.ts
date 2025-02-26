@@ -7,6 +7,7 @@ export class BasePage {
   constructor(page: Page) {
     this.page = page;
     this.navBarSection = new NavBarSection(page);
+    //should have footer section here
   }
 
   async waitForModal() {
@@ -17,5 +18,9 @@ export class BasePage {
   }
   async goto(url: string) {
     await this.page.goto(url);
+  }
+
+  async getCurrentPageURL() {
+    return this.page.url();
   }
 }

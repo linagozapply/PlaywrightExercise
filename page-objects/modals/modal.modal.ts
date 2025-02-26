@@ -15,18 +15,18 @@ export class Modal {
   readonly continueOnCartButton: Locator;
   constructor(page: Page) {
     this.page = page;
-    this.root = this.page.locator("#cartModal");
+    this.root = this.page.locator(".modal");
     this.modalContent = this.root.locator(".modal-content");
     this.modalHeader = this.modalContent.locator(".modal-header");
     this.modalTitle = this.modalHeader.locator(".modal-title");
     this.modalBody = this.modalHeader.locator(".modal-body");
-    this.cartView = this.modalBody.getByRole("link", {
+    this.cartView = this.root.getByRole("link", {
       name: MODAL_TEXTS.VIEW_CART,
     });
     this.continueShoppingButton = this.root.getByRole("button", {
       name: MODAL_TEXTS.CONTINUE_SHOPPING,
     });
-    this.registeredLoginLink = this.modalBody.getByRole("link", {
+    this.registeredLoginLink = this.root.getByRole("link", {
       name: MODAL_TEXTS.REGISTERED_LOGIN,
     });
     this.continueOnCartButton = this.root.getByRole("button", {
