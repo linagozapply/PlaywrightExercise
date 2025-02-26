@@ -1,5 +1,6 @@
 import { Locator ,Page } from "@playwright/test";
 import { BasePage } from "./base.page";
+import { Modal } from "../modals/modal.modal";
 
 export class CartPage extends BasePage {
     readonly cartItemsContainer: Locator;
@@ -11,5 +12,8 @@ export class CartPage extends BasePage {
         this.cartItemsInfo = this.cartItemsContainer.locator("#cart_info");
         this.checkoutButton = this.page.locator(".check_out");
     }
-
+  async clickProceedToCheckout(): Promise<Modal> {
+    await this.checkoutButton.click();
+    return new Modal(this.page);
+  }
 }

@@ -1,5 +1,6 @@
 import { Locator, Page } from "@playwright/test";
 import { BasePage } from "./base.page";
+import { SLUGS } from "../../constants/slugs";
 
 export class LoginPage extends BasePage {
   readonly loginForm: Locator;
@@ -22,5 +23,23 @@ export class LoginPage extends BasePage {
     this.nameSignUpForm = this.signUpForm.getByTestId("signup-name");
     this.emailAddressSignUpForm = this.signUpForm.getByTestId("signup-email");
     this.signUpButton = this.signUpForm.getByTestId("signup-button");
+  }
+
+  async gotoLoginPage() {
+    await Promise.all([
+      this.page.goto(SLUGS.LOGIN),
+      this.page.waitForLoadState("domcontentloaded"),
+    ]);
+  }
+  async login(email: string, password: string) {
+    await this.emailAddressLoginForm.fill(email);
+    await this.passwordLoginForm.fill(password);
+    await this.loginButton.click();
+  }
+
+  async signup(name: string, email: string) {
+    await this.nameSignUpForm.fill(name);
+    await this.emailAddressSignUpForm.fill(email);
+    await this.signUpButton.click();
   }
 }

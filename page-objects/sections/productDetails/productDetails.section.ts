@@ -1,6 +1,5 @@
 import { Locator, Page } from "@playwright/test";
 import { FieldActions } from "../../../utilities/fieldActions";
-import { CheckOutConfirmationModal } from "../../modals/checkOutConfirmationModal.modal";
 import { Modal } from "../../modals/modal.modal";
 export class ProductDetailsSection {
   readonly page: Page;
@@ -14,7 +13,7 @@ export class ProductDetailsSection {
     this.page = page;
     this.root = this.page.locator(".container");
     this.productDetails = this.root.locator(".product-details");
-    this.productInfo = this.root.locator(".product-information");
+    this.productInfo = this.productDetails.locator(".product-information");
     this.productName = this.productInfo.locator("h2");
     this.itemsQuantityInput = this.productInfo.locator("#quantity");
     this.itemsAddToCartButton = this.productInfo.locator(".cart");

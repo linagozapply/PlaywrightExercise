@@ -6,6 +6,7 @@ export class ProductsListingContainerSection {
   readonly productsListingContainer: Locator;
   readonly productCardInfoContainer: Locator;
   readonly productCardInfo: Locator;
+  readonly productCardOverlay: Locator;
   readonly productCartAdd: Locator;
   readonly productCardsToChoose: Locator;
   constructor(page: Page) {
@@ -14,6 +15,7 @@ export class ProductsListingContainerSection {
     this.productsListingContainer = this.root.locator(".features_items");
     this.productCardInfoContainer =
       this.productsListingContainer.locator(".single-products");
+    this.productCardOverlay = this.productCardInfoContainer.locator(".overlay");
     this.productCardInfo =
       this.productCardInfoContainer.locator(".productinfo");
     this.productCartAdd = this.productCardInfoContainer.locator(".add-to-cart");
@@ -26,5 +28,8 @@ export class ProductsListingContainerSection {
     const selectedProduct = this.productCardsToChoose.nth(index);
     await selectedProduct.waitFor({ state: "visible" });
     await selectedProduct.click();
+  }
+  async getProductDetails(index: number) {
+    return this.productCardInfo.nth(index).innerText();
   }
 }

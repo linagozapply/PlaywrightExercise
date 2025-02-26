@@ -1,0 +1,10 @@
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="11.382311">
+<testsuite name="productAddBySteps.spec.ts" timestamp="2025-02-26T04:06:55.450Z" hostname="Desktop Chrome" tests="1" failures="0" skipped="0" time="9.225" errors="0">
+<testcase name="Complete purchase flow" classname="productAddBySteps.spec.ts" time="9.225">
+</testcase>
+</testsuite>
+<testsuite name="productAddBySteps.spec.ts" timestamp="2025-02-26T04:06:55.450Z" hostname="Mobile Chrome" tests="1" failures="0" skipped="0" time="9.462" errors="0">
+<testcase name="Complete purchase flow" classname="productAddBySteps.spec.ts" time="9.462">
+</testcase>
+</testsuite>
+</testsuites>

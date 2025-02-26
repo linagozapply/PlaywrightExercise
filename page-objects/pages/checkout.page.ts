@@ -10,7 +10,7 @@ export class CheckoutPage extends BasePage {
 
   constructor(page: Page) {
     super(page);
-    this.checkoutInfo = this.page.getByTestId("account-created");
+    this.checkoutInfo = this.page.getByTestId("checkout-info");
 
     this.cartInfoSection = new checkoutCartInfoSection(page);
     this.placeOrderButton = this.page.getByRole("link", {
