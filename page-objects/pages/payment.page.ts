@@ -19,7 +19,7 @@ export class PaymentPage extends BasePage {
     this.cvc = this.page.getByTestId("cvc");
     this.expirationMonth = this.page.getByTestId("expiry-month");
     this.expirationYear = this.page.getByTestId("expiry-year");
-    this.payConfirmOrderButton = this.page.getByTestId("pay-button5");
+    this.payConfirmOrderButton = this.page.getByTestId("pay-button");
   }
 
   async clickPlaceOderButton() {
