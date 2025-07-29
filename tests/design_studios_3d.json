@@ -1,0 +1,171 @@
+{
+  "design_studios": [
+    {
+      "id": 1,
+      "name": "Cleveland - Akron",
+      "has3D": true,
+      "calendlyLink": "http://calendly.com/d/ck2v-ywp-p3v"
+    },
+    {
+      "id": 7,
+      "name": "Ashland",
+      "has3D": true,
+      "calendlyLink": "http://calendly.com/d/cpcd-z3d-9qm"
+    },
+    {
+      "id": 24,
+      "name": "Belmont",
+      "has3D": true,
+      "calendlyLink": "http://calendly.com/d/cpwz-xr4-7hb"
+    },
+    {
+      "id": 6,
+      "name": "Bowling Green",
+      "has3D": true,
+      "calendlyLink": "http://calendly.com/d/44b-74v-5sg"
+    },
+    {
+      "id": -1,
+      "name": "Pittsburgh",
+      "has3D": true,
+      "calendlyLink": "http://calendly.com/d/439-7z4-ddj"
+    },
+    {
+      "id": 3,
+      "name": "Ravenna",
+      "has3D": true,
+      "calendlyLink": "http://calendly.com/d/ck6c-sg6-232"
+    },
+    {
+      "id": 5,
+      "name": "Cincinnati",
+      "has3D": true,
+      "calendlyLink": "http://calendly.com/d/cp3x-k6k-sxy"
+    },
+    {
+      "id": 4,
+      "name": "Columbus North",
+      "has3D": true,
+      "calendlyLink": "http://calendly.com/d/339-s9g-tpp"
+    },
+    {
+      "id": 4,
+      "name": "Columbus South",
+      "has3D": true,
+      "calendlyLink": "http://calendly.com/d/cp3x-k6k-sxy"
+    },
+    {
+      "id": 48,
+      "name": "Dayton",
+      "has3D": true,
+      "calendlyLink": "http://calendly.com/d/ck4d-v6r-3x6"
+    },
+    {
+      "id": 44,
+      "name": "Louisville",
+      "has3D": true
+    },
+    {
+      "id": 47,
+      "name": "Indianapolis",
+      "has3D": true,
+      "calendlyLink": "http://calendly.com/d/ck7q-jr8-9fj"
+    },
+    {
+      "id": 53,
+      "name": "State College",
+      "has3D": true,
+      "calendlyLink": "http://calendly.com/d/cn6y-x5x-npp"
+    },
+    {
+      "id": 50,
+      "name": "Southeast Michigan",
+      "has3D": true,
+      "calendlyLink": "http://calendly.com/d/cpgn-kfj-5fq"
+    },
+    {
+      "id": 21,
+      "name": "Lafayette",
+      "has3D": false,
+      "calendlyLink": "http://calendly.com/d/3nd-bpk-8m9"
+    },
+    {
+      "id": 20,
+      "name": "New Orleans - Baton Rouge",
+      "has3D": false,
+      "calendlyLink": "http://calendly.com/d/ck7c-xpk-rdg"
+    },
+    {
+      "id": 52,
+      "name": "Bay St. Louis - Gulfport",
+      "has3D": false,
+      "calendlyLink": "http://calendly.com/d/cpxr-z93-s58"
+    },
+    {
+      "id": 18,
+      "name": "Asheville",
+      "has3D": false,
+      "calendlyLink": "http://calendly.com/d/cp6z-h7p-qfj"
+    },
+    {
+      "id": 55,
+      "name": "Charlotte",
+      "has3D": false,
+      "calendlyLink": "http://calendly.com/d/444-8kr-pzd"
+    },
+    {
+      "id": -1,
+      "name": "Greensboro - Winston",
+      "has3D": false,
+      "calendlyLink": "http://calendly.com/d/ckkg-yf5-sgp"
+    },
+    {
+      "id": 9,
+      "name": "Raleigh - Durham",
+      "has3D": false,
+      "calendlyLink": "http://calendly.com/d/5j2-nvj-c73"
+    },
+    {
+      "id": -1,
+      "name": "Wilmington",
+      "has3D": false,
+      "calendlyLink": "http://calendly.com/d/cpzz-ktr-y57"
+    },
+    {
+      "id": -1,
+      "name": "Charleston",
+      "has3D": false,
+      "calendlyLink": "http://calendly.com/d/cn8b-p2z-7v9"
+    },
+    {
+      "id": -1,
+      "name": "Columbia",
+      "has3D": false,
+      "calendlyLink": "http://calendly.com/d/cpgp-8mg-2n9"
+    },
+    {
+      "id": -1,
+      "name": "Greenville - Spartanburg",
+      "has3D": false,
+      "calendlyLink": "http://calendly.com/d/ckbv-2f3-x29"
+    },
+    {
+      "id": -1,
+      "name": "Hilton Head - Savannah",
+      "has3D": false,
+      "calendlyLink": "http://calendly.com/d/ckdf-wq9-cpd"
+    },
+    {
+      "id": -1,
+      "name": "Knoxville",
+      "has3D": false,
+      "calendlyLink": "http://calendly.com/d/47p-nwb-vqm"
+    },
+    {
+      "id": 51,
+      "name": "Port Arthur",
+      "has3D": false,
+      "calendlyLink": "http://calendly.com/d/3tz-jpk-7vr"
+    }
+  ]
+}

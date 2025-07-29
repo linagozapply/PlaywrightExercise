@@ -1,48 +1,134 @@
 # Test Results Report
 
-Starting the run with 2 tests
+Starting the run with 32 tests
 
-
-## Starting test: Complete purchase flow
-
-## Starting test: Complete purchase flow
-**Finished test:** Complete purchase flow
+**Finished test:** Get status code 200 from new page https://staging.schumacherhomes.com/umbraco/SchumacherMortgage.com
 **Status:** passed
 
-### Test Steps:
-- 📜 **Step:** [View trace](Before Hooks)
-- 📜 **Step:** [View trace](Navigate to home page)
-- 📜 **Step:** [View trace](Navigate to Products listing view)
-- 📜 **Step:** [View trace](Select third product in the products listing)
-- 📜 **Step:** [View trace](Enter quantity items)
-- 📜 **Step:** [View trace](Click on add item to cart,validate confirmation modal and proceed to cart page)
-- 📜 **Step:** [View trace](Proceed to checkout, handle login modal and proceed to login page)
-- 📜 **Step:** [View trace](Fill in user details for new user on login page and proceed to signup)
-- 📜 **Step:** [View trace](Register new user on signup page and proceed to home page)
-- 📜 **Step:** [View trace](Go to cart page and click on Proceed to checkout and land on payment page )
-- 📜 **Step:** [View trace](Fill up payment details on payment page and proceed to payment complete page)
-- 📜 **Step:** [View trace](Logout and got to Login page)
-- 📜 **Step:** [View trace](After Hooks)
+---
+**Finished test:** Get status code 200 from new page https://staging.schumacherhomes.com/where-we-build/bay-st-louis-gulfport?location=52
+**Status:** failed
 
 ---
-**Finished test:** Complete purchase flow
-**Status:** passed
+**Finished test:** Get status code 200 from new page https://staging.schumacherhomes.com/where-we-build/asheville?location=18
+**Status:** failed
 
-### Test Steps:
-- 📜 **Step:** [View trace](Before Hooks)
-- 📜 **Step:** [View trace](Navigate to home page)
-- 📜 **Step:** [View trace](Navigate to Products listing view)
-- 📜 **Step:** [View trace](Select third product in the products listing)
-- 📜 **Step:** [View trace](Enter quantity items)
-- 📜 **Step:** [View trace](Click on add item to cart,validate confirmation modal and proceed to cart page)
-- 📜 **Step:** [View trace](Proceed to checkout, handle login modal and proceed to login page)
-- 📜 **Step:** [View trace](Fill in user details for new user on login page and proceed to signup)
-- 📜 **Step:** [View trace](Register new user on signup page and proceed to home page)
-- 📜 **Step:** [View trace](Go to cart page and click on Proceed to checkout and land on payment page )
-- 📜 **Step:** [View trace](Fill up payment details on payment page and proceed to payment complete page)
-- 📜 **Step:** [View trace](Logout and got to Login page)
-- 📜 **Step:** [View trace](After Hooks)
+---
+**Finished test:** Get status code 200 from new page https://staging.schumacherhomes.com/where-we-build/ashland?location=7
+**Status:** failed
+
+---
+**Finished test:** Get status code 200 from new page https://staging.schumacherhomes.com/where-we-build/belmont?location=24
+**Status:** failed
+
+---
+**Finished test:** Get status code 200 from new page https://staging.schumacherhomes.com/where-we-build/bowling-green?location=6
+**Status:** failed
+
+---
+**Finished test:** Get status code 200 from new page https://staging.schumacherhomes.com/where-we-build/charleston?location=13
+**Status:** failed
+
+---
+**Finished test:** Get status code 200 from new page https://staging.schumacherhomes.com/where-we-build/charlotte?location=10
+**Status:** failed
+
+---
+**Finished test:** Get status code 200 from new page https://staging.schumacherhomes.com/where-we-build/columbus-north?location=4
+**Status:** failed
+
+---
+**Finished test:** Get status code 200 from new page https://staging.schumacherhomes.com/where-we-build/cincinnati?location=5
+**Status:** failed
+
+---
+**Finished test:** Get status code 200 from new page https://staging.schumacherhomes.com/where-we-build/columbia?location=15
+**Status:** failed
+
+---
+**Finished test:** Get status code 200 from new page https://staging.schumacherhomes.com/where-we-build/cleveland-akron?location=1
+**Status:** failed
+
+---
+**Finished test:** Get status code 200 from new page https://staging.schumacherhomes.com/where-we-build/columbus-south?location=8
+**Status:** failed
+
+---
+**Finished test:** Get status code 200 from new page https://staging.schumacherhomes.com/where-we-build/dayton?location=48
+**Status:** failed
+
+---
+**Finished test:** Get status code 200 from new page https://staging.schumacherhomes.com/where-we-build/greensboro-winston?location=11
+**Status:** failed
+
+---
+**Finished test:** Get status code 200 from new page https://staging.schumacherhomes.com/where-we-build/hilton-head-savannah?location=46
+**Status:** failed
+
+---
+**Finished test:** Get status code 200 from new page https://staging.schumacherhomes.com/where-we-build/franklin?location=45
+**Status:** failed
+
+---
+**Finished test:** Get status code 200 from new page https://staging.schumacherhomes.com/where-we-build/greenville-spartanburg?location=14
+**Status:** failed
+
+---
+**Finished test:** Get status code 200 from new page https://staging.schumacherhomes.com/where-we-build/hilton-head-savannah/
+**Status:** failed
+
+---
+**Finished test:** Get status code 200 from new page https://staging.schumacherhomes.com/where-we-build/indianapolis?location=47
+**Status:** failed
+
+---
+**Finished test:** Get status code 200 from new page https://staging.schumacherhomes.com/where-we-build/knoxville?location=49
+**Status:** failed
+
+---
+**Finished test:** Get status code 200 from new page https://staging.schumacherhomes.com/where-we-build/new-orleans-baton-rouge?location=20
+**Status:** failed
+
+---
+**Finished test:** Get status code 200 from new page https://staging.schumacherhomes.com/where-we-build/louisville?location=44
+**Status:** failed
+
+---
+**Finished test:** Get status code 200 from new page https://staging.schumacherhomes.com/where-we-build/port-arthur?location=51
+**Status:** failed
+
+---
+**Finished test:** Get status code 200 from new page https://staging.schumacherhomes.com/where-we-build/lafayette?location=21
+**Status:** failed
+
+---
+**Finished test:** Get status code 200 from new page https://staging.schumacherhomes.com/where-we-build/pittsburgh?location=16
+**Status:** failed
+
+---
+**Finished test:** Get status code 200 from new page https://staging.schumacherhomes.com/where-we-build/raleigh-durham?location=9
+**Status:** failed
+
+---
+**Finished test:** Get status code 200 from new page https://staging.schumacherhomes.com/where-we-build/southeast-michigan?location=50
+**Status:** failed
+
+---
+**Finished test:** Get status code 200 from new page https://staging.schumacherhomes.com/where-we-build/ravenna?location=3
+**Status:** failed
+
+---
+**Finished test:** Get status code 200 from new page https://staging.schumacherhomes.com/where-we-build/what-to-expect/
+**Status:** failed
+
+---
+**Finished test:** Get status code 200 from new page https://staging.schumacherhomes.com/where-we-build/state-college?location=53
+**Status:** failed
+
+---
+**Finished test:** Get status code 200 from new page https://staging.schumacherhomes.com/where-we-build/wilmington?location=12
+**Status:** failed
 
 ---
 
-## Finished the run: passed
+## Finished the run: failed
